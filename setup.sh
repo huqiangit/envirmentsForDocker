@@ -2,6 +2,7 @@ yum update -y
 yum install -y git
 yum install -y curl
 yum install -y vim
+yum install -y tmux
 
 #install golang
 yum install -y golang
