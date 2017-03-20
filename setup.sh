@@ -25,6 +25,10 @@ yum -y install docker-ce
 systemctl start docker
 
 
+#pull docker source
+git clone https://github.com/docker/docker.git /root/work/src/docker/docker 
+
+
 
 
 
