@@ -1,3 +1,4 @@
+yum update -y
 yum install -y git
 yum install -y curl
 yum install -y vim
@@ -7,6 +8,8 @@ yum install -y golang
 mkdir -p /root/work/src
 echo "export GOPATH=/root/work" >> .bashrc
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+cp .vimrc ~/
+vim +PluginInstall +qall
 
 
 
