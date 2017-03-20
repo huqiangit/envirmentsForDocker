@@ -6,7 +6,9 @@ yum install -y vim
 #install golang
 yum install -y golang
 mkdir -p /root/work/src
-echo "export GOPATH=/root/work" >> .bashrc
+echo "export GOPATH=/root/work" >> ~/.bashrc
+source ~/.bashrc
+#config for vim-go
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp .vimrc ~/
 vim +PluginInstall +qall
